@@ -4,7 +4,7 @@ Shape analysis of mouse embryo surfaces from light-sheet volumes, using
 conformal sphere mapping and spherical-harmonic decomposition of curvature
 ([FlowShape](https://github.com/DeBoerLab/flowshape)).
 
-> Work in progress. Paths in the scripts are currently hardcoded to local
+> Paths in the scripts are currently hardcoded to local
 > and network drives and will need editing before the pipeline runs elsewhere.
 
 ## Pipeline
