@@ -58,7 +58,7 @@ python -m ipykernel install --user --name flowshape --display-name "Flowshape"
 Note the `numpy==1.26.0` downgrade at the end — several of the mesh
 packages are not yet built against NumPy 2.x, so this pin is deliberate and
 must come last. `flowshape` is installed with `--no-deps` for the same
-reason. See `flowshape_mymachine.txt` for the raw notes this was built from.
+reason.
 
 ### MATLAB
 
