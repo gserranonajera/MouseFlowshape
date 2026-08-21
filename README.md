@@ -66,7 +66,3 @@ MATLAB side requires the Image Processing,
 Statistics & Machine Learning, Computer Vision and Lidar toolboxes, plus the
 [keller-lab-block-filetype](https://github.com/KellerLabMPI/keller-lab-block-filetype)
 MATLAB wrapper for reading `.klb` stacks.
-
-## Data
-
-Image volumes, meshes and results are not tracked here — see `.gitignore`.
