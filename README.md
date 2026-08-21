@@ -32,8 +32,37 @@ resulting `l_max = 16` harmonic coefficients (`weights_masked`), stored in
 
 ## Environment
 
-Conda/pip commands used to build the working environment are recorded in
-`flowshape_mymachine.txt`. MATLAB side requires the Image Processing,
+### Python
+
+```bash
+conda create -n flowshape
+conda activate flowshape
+conda install python=3.12
+conda install -c conda-forge gdk-pixbuf=2.42.12 --force-reinstall
+conda install -c conda-forge numpy scipy==1.14.1 jupyterlab scikit-learn scikit-image matplotlib pyvista meshplot
+pip install pyacvd pymeshfix libigl==2.5.1 plyfile
+pip install flowshape --no-deps
+pip install tqdm
+pip install pyklb
+```
+
+Then, for HDF5 I/O, mesh healing, parallel loops, ICP alignment and the
+notebook kernel:
+
+```bash
+pip install h5py pymeshlab joblib open3d ipykernel
+pip install numpy==1.26.0 tifffile==2024.12.12 imageio==2.37.0 imageio-ffmpeg==0.6.0 --force-reinstall
+python -m ipykernel install --user --name flowshape --display-name "Flowshape"
+```
+
+Note the `numpy==1.26.0` downgrade at the end — several of the mesh
+packages are not yet built against NumPy 2.x, so this pin is deliberate and
+must come last. `flowshape` is installed with `--no-deps` for the same
+reason. See `flowshape_mymachine.txt` for the raw notes this was built from.
+
+### MATLAB
+
+MATLAB side requires the Image Processing,
 Statistics & Machine Learning, Computer Vision and Lidar toolboxes, plus the
 [keller-lab-block-filetype](https://github.com/KellerLabMPI/keller-lab-block-filetype)
 MATLAB wrapper for reading `.klb` stacks.
