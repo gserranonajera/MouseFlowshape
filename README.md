@@ -4,10 +4,11 @@ Shape analysis of mouse embryo surfaces from light-sheet volumes using spherical
 
 ## Built on FlowShape
 The shape description comes from FlowShape, a Python package for cell shape analysis. A shape is represented by its curvature mapped conformally onto a sphere, and this single spherical function is expanded in spherical harmonics. The obtained coefficients can be used to do meaningful unbiased comparisons between biological 3D shapes. If you use this repository, please cite it:
-
-van Bavel C., Thiels W., Jelier R. (2023). Cell shape characterization, alignment, and comparison using FlowShape. Bioinformatics 39(6), btad383. https://doi.org/10.1093/bioinformatics/btad383
-
-Package: flowshape on PyPI (GPL-3.0).
+> van Bavel C., Thiels W., Jelier R. (2023). Cell shape characterization,
+> alignment, and comparison using FlowShape. *Bioinformatics* **39**(6),
+> btad383. https://doi.org/10.1093/bioinformatics/btad383
+ 
+Package: [`flowshape`](https://pypi.org/project/flowshape/) on PyPI (GPL-3.0).
 
 
 ## Pipeline
