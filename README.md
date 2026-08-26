@@ -1,11 +1,16 @@
 # MouseFlowShape
 
 Shape analysis of mouse embryo surfaces from light-sheet volumes, using
-conformal sphere mapping and spherical-harmonic decomposition of curvature
-([FlowShape](https://github.com/DeBoerLab/flowshape)).
+conformal sphere mapping and spherical-harmonic decomposition of curvature.
 
-> Paths in the scripts are currently hardcoded to local
-> and network drives and will need editing before the pipeline runs elsewhere.
+## Built on FlowShape
+
+If you use this repository, please cite it:
+
+van Bavel C., Thiels W., Jelier R. (2023). Cell shape characterization, alignment, and comparison using FlowShape. Bioinformatics 39(6), btad383. https://doi.org/10.1093/bioinformatics/btad383
+
+Package: flowshape on PyPI (GPL-3.0).
+
 
 ## Pipeline
 
